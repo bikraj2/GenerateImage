@@ -7,9 +7,13 @@ const images = mongoose.Schema({
   },
   createdBy: {
     type: mongoose.Types.ObjectId,
-    ref: 'user',
+    ref: user,
     required: [true, 'Please provide user'],
   },
+  src:{
+    type:String,
+    require:true
+  }
 });
 
 module.exports=mongoose.model('images',images)

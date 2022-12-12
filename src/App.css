@@ -1,4 +1,12 @@
+.main{
+  background:url("https://wallpaperaccess.com/full/4847463.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  
+}
 .form{
+  
   margin-top: 20px;
   display: grid;
   align-items: center;
@@ -7,4 +15,9 @@
   margin: 10px;
   width: 300px;
   border-radius: 10px;
+}
+.image-div{
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
