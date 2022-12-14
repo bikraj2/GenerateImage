@@ -2,7 +2,8 @@ import React from 'react'
 import { useGlobalContext } from '../globalContext';
 import './singleImage.css'
 function SingleImage({props}) {
-  const {imageUrl,searchTerm} = useGlobalContext()
+    const {imageUrl,searchTerm} = props
+    console.log(imageUrl,searchTerm)
   return (
     <div className='image-container'>
       <img src={imageUrl} alt='asdf' className='image'></img>

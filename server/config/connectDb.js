@@ -4,7 +4,7 @@ console.log(process.env)
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      'mongodb+srv://bikraj2:Hellohi@cluster0.vsnhb.mongodb.net/?retryWrites=true&w=majority'
+      process.env.MONGO_URI
     );
   } catch (error) {
     throw error;

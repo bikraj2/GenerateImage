@@ -11,15 +11,12 @@ export default function Navbar() {
             Home
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to='/history' className='History'>
             History
           </Link>
-        </li>
+        </li> */}
       </ul>
-        <Link to='/register' >
-          Register
-        </Link>
     </nav>
   );
 }
