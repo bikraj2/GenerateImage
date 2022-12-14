@@ -1,12 +1,15 @@
 const { Configuration, OpenAIApi } = require('openai');
 require('dotenv').config();
+
 const configuration = new Configuration({
-  apiKey: process.env.API_KEY,
+  // apiKey: process.env.API_KEY,
+  apiKey: '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',
 });
 const Image = require('../models/images');
 const openai = new OpenAIApi(configuration);
 
 const generateImage = async (req, res) => {
+  console.log("here")
   const prompt = req.query.prompt;
   const userId = req.headers.userid;
   try {
@@ -21,6 +24,7 @@ const generateImage = async (req, res) => {
       createdBy: userId,
       src:image_url
     });
+  
     const newIamge = await newImage.save();
     res.status(200).json({ image: image_url });
   } catch (e) {

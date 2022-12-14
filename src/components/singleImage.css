@@ -1,0 +1,12 @@
+.image-container{
+    width:100vw;
+    height: 370px;
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+.image{
+    height: 360px;
+    width: 360px;
+    border-radius: 6px;
+}
